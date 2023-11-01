@@ -1,0 +1,40 @@
+.fatherFAQ
+{
+	padding: 1em 3em;
+	margin: 2%;
+	width: 96%;
+
+	display: inline-block;
+}
+
+.askBox
+{
+	display: block;
+	float: left;
+	margin: 1%;
+
+	border: solid rgba(	0, 0, 0, .3) .1em;
+	width: 48%;
+	padding: 1em;
+}
+
+.question, .answer
+{
+	padding: .5em 1em;
+}
+
+.question
+{
+	color: #ffffff;
+	background: #181818;
+	text-align: center;
+	letter-spacing: .4em;
+}
+
+.answer
+{
+	line-height: 2em;
+}
+
+
+

@@ -1,0 +1,184 @@
+.filterBox
+{
+	width: 90%;
+	margin: auto;
+	padding: 1em;
+
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: start;
+}
+
+.filterBox img
+{
+	width: 4%;
+}
+
+.filterBox img, .filterBox span, .filterBox .triangle
+{
+	margin: auto 1em;
+}
+
+.information
+{
+	text-align: justify;
+	padding: .1em;
+	box-sizing: border-box;
+}
+
+.triangle
+{
+	height: 0;
+	width: 0;
+	border-top: solid 1em transparent;
+	border-left: solid 1em rgb(96, 96, 96);
+	border-right: solid 1em transparent;
+	border-bottom: solid 1em transparent;
+
+/*	background: steelblue;*/
+	position: relative;
+	top: 0;
+
+
+	cursor: pointer;
+	box-sizing: border-box;
+	transition: 400ms;
+	transition-property: all;
+}
+
+
+/*.triangle:hover
+{
+	transform: rotate(90deg);
+	position: relative;
+	top: 1em;
+}*/
+
+.checkContainer
+{
+	width: 70%;
+	margin: auto;
+	padding: .5em;
+
+	display: flex; /* Here js */
+
+	flex-flow: row;
+}
+
+.checkElements
+{
+	width: 30%;
+	margin: auto;
+	padding: .1em;
+
+	text-align: center;
+	display: flex;
+	flex-flow: column;
+}
+
+.checkElements > .triangle
+{
+	transform:  rotate(90deg);
+	margin: .5em auto;
+
+	box-sizing: border-box;
+}
+
+input[type=radio]	
+{
+	width: 2em;
+	height: 2em;
+	display: none;
+}
+
+label 
+{
+	position: relative;
+	box-sizing: border-box;
+	cursor: pointer;
+	white-space:nowrap;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: .5em;
+	margin: .5em;
+	border: solid .1em black;
+
+	transition: 100ms;
+}
+
+label:hover
+{
+	background: rgba(0, 0, 0, .1);
+}
+
+label::before
+{
+	content: "";
+	height: 1em;
+	width: 1em;
+	margin: auto .5em;
+
+	border: double rgba(96, 96, 96, 1.0) .1em;
+	border-radius: 100%;
+	text-align: justify;
+
+	transition: 150ms;
+}
+
+input[type=radio]:checked + label::before	
+{
+	background: rgba(96, 96, 96, 1.0);
+}
+
+.productsFather
+{
+	padding: 0em 1em;
+}
+
+.elementProducts
+{
+	width: 27%;
+	display: inline-block;
+	padding: .5em;
+	margin: 3%;
+
+	transition: 200ms;
+}
+
+.elementProducts:hover
+{
+	scale: 1.04;
+	background: rgba(0, 0, 0,.1);	
+}
+
+.elementProducts > img
+{
+	display: block;
+	width: 100%;
+	margin: 1em auto;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+}
+
+.elementProducts > span
+{
+	margin: auto;
+	width: 50%;
+	display: block;
+	border:solid black .1em;
+
+	text-align: center;
+	font-style: italic;
+
+}
+
+.elementProducts > p
+{
+	background: #181818;
+	color: #ffffff;
+}
+

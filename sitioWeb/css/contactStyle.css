@@ -1,0 +1,68 @@
+.contactFather
+{
+		padding: 1.5em;
+	margin: 2em;
+	display: flex;
+	align-items: center;
+}
+	
+.contactElement
+{
+	width: 48%;
+	margin: 1%;
+	padding: 2em;
+	float: left;
+
+	border: solid rgba(0, 0, 0, 0.6) .1em;	
+}
+
+.spanContact
+{
+	display: block;
+	width: 40%;
+	margin: 1%;
+
+	background: #181818;
+	color: #ffffff;
+	padding: .5em 1em;
+
+	text-align: center;
+
+	margin: auto;
+}
+
+.textContact
+{
+	margin: 1em;
+	padding: .8em .5em;
+}
+
+.textContact > span
+{
+	background: #181818;
+	color: #ffffff;
+	padding: .1em .5em;
+	font-style: italic;
+	letter-spacing: .2em;
+}
+
+.textContact > a
+{
+	color: #181818;
+	padding: 0em 1em;
+}
+
+.contactMap
+{
+	width: 100%;
+	margin: 1em auto;
+}
+
+.contactMap > img
+{
+	width: 100%;
+	margin: auto;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+	padding: 1em;
+}
